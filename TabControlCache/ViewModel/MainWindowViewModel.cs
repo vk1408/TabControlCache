@@ -20,6 +20,8 @@ namespace TabControlCache.ViewModel
             }
         }
         // Tab item cache to boost perfomance. No content rendering at tab switch! 
+        //  Rrendering" refers to the process of generating the visual representation
+        //  of elements on the screen based on their properties, styles, and layout information
         private readonly Dictionary<string, UIElement> _tabContentCache = new Dictionary<string, UIElement>();
         private object _tabItem;
         public object TabItem 
